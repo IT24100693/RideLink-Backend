@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
 <<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/Driver and vehicle service.iml" filepath="$PROJECT_DIR$/.idea/Driver and vehicle service.iml" />
+=======
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/account-service.iml" filepath="$PROJECT_DIR$/.idea/account-service.iml" />
 =======
       <module fileurl="file://$PROJECT_DIR$/.idea/Account Service.iml" filepath="$PROJECT_DIR$/.idea/Account Service.iml" />
+>>>>>>> origin/main
 >>>>>>> origin/main
     </modules>
   </component>

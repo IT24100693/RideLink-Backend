@@ -4,22 +4,35 @@
     <annotationProcessing>
 <<<<<<< HEAD
       <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for Driver-and-vehicle-service" enabled="true">
+=======
+<<<<<<< HEAD
+      <profile default="true" name="Default" enabled="true" />
 =======
 >>>>>>> origin/main
       <profile name="Annotation profile for account-service" enabled="true">
+>>>>>>> origin/main
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
+<<<<<<< HEAD
+        <module name="Driver-and-vehicle-service" />
+=======
         <module name="account-service" />
+>>>>>>> origin/main
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+<<<<<<< HEAD
+      <module name="Driver-and-vehicle-service" options="-parameters" />
+=======
       <module name="account-service" options="-parameters" />
+>>>>>>> origin/main
     </option>
   </component>
 </project>

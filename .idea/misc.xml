@@ -5,6 +5,13 @@
     <option name="originalFiles">
       <list>
 <<<<<<< HEAD
+        <option value="$PROJECT_DIR$/Driver-and-vehicle-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="22" project-jdk-type="JavaSDK">
+=======
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/account-service/pom.xml" />
       </list>
     </option>
@@ -16,6 +23,7 @@
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="corretto-22" project-jdk-type="JavaSDK">
+>>>>>>> origin/main
 >>>>>>> origin/main
     <output url="file://$PROJECT_DIR$/out" />
   </component>
