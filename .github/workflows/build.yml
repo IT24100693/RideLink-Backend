@@ -15,16 +15,12 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Set up JDK 17
-      uses: actions/setup-java@v3
+      uses: actions/setup-java@v4
       with:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Grant execute permission for mvnw
+    - name: Build Maven Services
       run: |
-        chmod +x RideLink-Microservices-Backend/mvnw || true
-
-    - name: Build with Maven
-      run: |
-        cd RideLink-Microservices-Backend
-        ./mvnw clean package -DskipTests
+        find . -name "mvnw" -exec chmod +x {} \;
+        find . -name "pom.xml" -execdir ./mvnw clean package -DskipTests \;
