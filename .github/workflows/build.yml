@@ -10,6 +10,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    strategy:
+      fail-fast: false
+      matrix:
+        service:
+          - account-service
+          - Driver-and-vehicle-service
+          - Fare-payment-Service
+          - RideLink-Microservices-Backend
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -20,7 +29,15 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Build Maven Services
+    - name: Cache Maven packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-m2
+
+    - name: Build and Test with Maven
       run: |
-        find . -name "mvnw" -exec chmod +x {} \;
-        find . -name "pom.xml" -execdir ./mvnw clean package -DskipTests \;
+        cd ${{ matrix.service }}
+        mvn clean test
